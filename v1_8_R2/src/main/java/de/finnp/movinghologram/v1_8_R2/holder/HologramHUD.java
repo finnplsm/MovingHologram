@@ -13,8 +13,6 @@ public class HologramHUD extends HologramHolder {
     public HologramHUD(@NonNull final Location location, @NonNull final Player player, @NonNull final Object[] objects, final long lifetime) {
         super("hud-" + player.getUniqueId(), location, player, objects);
         this.lifetime = lifetime;
-        @NonNull final HologramPlayerHandler hologramPlayerHandler = HologramPlayerHandler.getInstance();
-        @NonNull final HologramPlayer hologramPlayer = hologramPlayerHandler.getHologramPlayerFromUUID(player.getUniqueId());
     }
 
     public long getLifetime() {

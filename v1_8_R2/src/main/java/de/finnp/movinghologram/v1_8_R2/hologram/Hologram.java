@@ -1,30 +1,41 @@
 package de.finnp.movinghologram.v1_8_R2.hologram;
 
 import lombok.NonNull;
+import net.minecraft.server.v1_8_R2.PlayerConnection;
 import org.bukkit.Location;
+import org.bukkit.craftbukkit.v1_8_R2.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
 public abstract class Hologram {
     @NonNull
-    protected Location location;
+    private Location location;
     @NonNull
-    protected final Player viewer;
-    protected final double height;
+    private final Player viewer;
+    @NonNull
+    private final PlayerConnection connection;
+    private final double height;
 
-    public Hologram(@NonNull final Location location, @NonNull final Player player, final double height) {
+
+    protected Hologram(@NonNull final Location location, @NonNull final Player player, final double height) {
         this.location = location;
         this.viewer = player;
+        this.connection = ((CraftPlayer) getViewer()).getHandle().playerConnection;
         this.height = height;
     }
 
     @NonNull
-    public Location getLocation() {
+    protected Location getLocation() {
         return this.location;
     }
 
     @NonNull
-    public Player getViewer() {
+    protected Player getViewer() {
         return this.viewer;
+    }
+
+    @NonNull
+    protected PlayerConnection getConnection() {
+        return connection;
     }
 
     public double getHeight() {
