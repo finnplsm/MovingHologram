@@ -54,5 +54,4 @@
             <systemPath>${project.basedir}/spigot-1.19.3.jar</systemPath>
         </dependency>
     </dependencies>
-
 </project>
