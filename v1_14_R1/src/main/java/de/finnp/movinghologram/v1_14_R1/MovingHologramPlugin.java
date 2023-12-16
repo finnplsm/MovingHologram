@@ -7,7 +7,6 @@ import de.finnp.movinghologram.v1_14_R1.player.HologramPlayerHandler;
 import lombok.NonNull;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
 
 public class MovingHologramPlugin extends JavaPlugin {
 
@@ -41,6 +40,5 @@ public class MovingHologramPlugin extends JavaPlugin {
 
     private static void setInstance(@NonNull final MovingHologramPlugin instance) {
         MovingHologramPlugin.INSTANCE = instance;
-        BukkitRunnable
     }
 }
