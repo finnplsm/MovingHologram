@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>v1_18_R1</artifactId>
+    <artifactId>v1_18_R2</artifactId>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -47,10 +47,10 @@
         </dependency>
         <dependency>
             <groupId>net.minecraft.server</groupId>
-            <artifactId>Spigot-1.18</artifactId>
-            <version>1.18-R0.1-SNAPSHOT</version>
+            <artifactId>Spigot-1.18.2</artifactId>
+            <version>1.18.2-R0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/spigot-1.18.jar</systemPath>
+            <systemPath>${project.basedir}/spigot-1.18.2.jar</systemPath>
         </dependency>
     </dependencies>
 </project>
