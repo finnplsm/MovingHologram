@@ -1,0 +1,5 @@
+name: MovingHologram
+version: 1.0
+author: finnp
+main: de.finnp.movinghologram.v1_18_R2.MovingHologramPlugin
+api-version: 1.18
